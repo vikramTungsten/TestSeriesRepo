@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% block content %}
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header breadcrumbHeader wow fadeIn" data-wow-delay="1.5s">              
+                <ol class="breadcrumb pull-left">
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li class="active">Exam Details</li>
+                </ol>
+                <div class="clearfix"></div>
+            </section>
+            <!-- Main content -->
+            <section class="content wow fadeInDownBig" data-wow-delay="0.8s" >
+              <div class="row">
+                      <div class="col-md-12">
+          <div class="box box-info borderToggle">
+            <div class="box-header blueBg">
+              <h3 class="box-title">Exam Details
+              </h3>
+              <!-- tools box -->
+              <div class="pull-right box-tools">
+                <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                  <i class="fa fa-minus"></i></button>
+               <!-- <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove">
+                  <i class="fa fa-times"></i></button>-->
+              </div>
+              <!-- /. tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body pad TableOuterToggle">
+              <div class="row">    
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                   <label>Total Question</label>
+                    <input class="form-control" placeholder="Total Question" type="">
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                    <label>Exam Time</label>  
+                  <div class="input-group" style="top: auto; left: auto;">
+                    <input  value="180" class="form-control" placeholder="Time" type="text">
+                    <div class="input-group-addon">Minute</div>
+                </div>
+                     
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                    <label>Uploading Time</label>  
+                   <div class="input-group" style="top: auto; left: auto;">
+                    <input  value="10-15" class="form-control" placeholder="Time" type="text">
+                    <div class="input-group-addon">Minute</div>
+                </div>
+                   </div>
+                </div>  
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                   <label>Max Mark</label>
+                    <input class="form-control" placeholder="Max Mark" type="">
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                   <label>Passing Mark</label>
+                    <input class="form-control" placeholder="Passing Mark" type="">
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                   <label for="exampleInputEmail1">Result Date</label>
+                    <input class="form-control Datep" placeholder="Result Date" type="" id="datepicker" readonly >
+                   </div>
+                </div>  
+                <div class="col-sm-2 col-md-2">
+                  <label>&nbsp;</label>    
+                  <a  class="btn btn-success btn-sm mrt30" href="#"> &nbsp; Ok &nbsp; </a>
+                </div>   
+               </div>
+                <div class="col-md-12 text-right">
+                 <a href="#" class="btn btn-sm btn-default"> Previous </a>                                    &nbsp;
+                 <a class="btn btn-sm btn-primary" href="CreateExam1.html">&nbsp; Next &nbsp;</a>
+               </div>
+            </div>
+          </div>
+          <!-- /.box -->
+        </div>
+                <!-- /.col-->
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+{% endblock %}

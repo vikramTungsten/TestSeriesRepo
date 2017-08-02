@@ -1,0 +1,592 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header breadcrumbHeader wow fadeIn" data-wow-delay="1.5s">              
+                <ol class="breadcrumb pull-left">
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li class="active">Exam Details</li>
+                </ol>
+                <div class="clearfix"></div>
+            </section>
+            <!-- Main content -->
+            <section class="content wow fadeInDownBig" data-wow-delay="0.8s" >
+                 <div class="row">
+                  
+                   <!-- /.col-->
+                 <div class="col-md-12">       
+                   <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                1
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                2
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                               3
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form role="form">
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <h3>Step 1</h3>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                              <div class="form-group">
+                               <label>Exam Name</label>
+                                <input class="form-control" placeholder="Total Question" type="">
+                               </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                              <div class="form-group">
+                               <label>Total Questions</label>
+                                <input class="form-control" placeholder="Total Question" type="">
+                               </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                              <div class="form-group">
+                               <label>Total Time</label>
+                                <input class="form-control" placeholder="Total Question" type="">
+                               </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                              <div class="form-group">
+                               <label>Total Marks</label>
+                                <input class="form-control" placeholder="Total Question" type="">
+                               </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                              <div class="form-group">
+                               <label>Passing Marks</label>
+                                <input class="form-control" placeholder="Total Question" type="">
+                               </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                              <div class="form-group">
+                               <label>Main Category</label>
+                                <select class="form-control">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                        <option>option 5</option>
+                                    </select>
+                               </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                              <div class="form-group">
+                               <label>Sub Category</label>
+                               <select class="form-control">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                        <option>option 5</option>
+                                    </select>
+                               </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                              <div class="form-group">
+                               <label>Section</label>
+                                <select class="form-control">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                        <option>option 5</option>
+                                    </select>
+                               </div>
+                            </div>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                              <div class="form-group">
+                                    <label>Start Date</label>
+                                    <div class="input-group date">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input class="form-control pull-right" id="datepicker" type="text">
+                                        <div class="clearfix"></div>
+                                        <span class="Errormessage DateError">Error Message to Show</span>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                              <div class="form-group">
+                                    <label>End Date</label>
+                                    <div class="input-group date">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input class="form-control pull-right" id="datepicker1" type="text">
+                                        <div class="clearfix"></div>
+                                        <span class="Errormessage DateError">Error Message to Show</span>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3">
+                              <div class="form-group">
+                                    <label>Start Date</label>
+                                    <div class="input-group date">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input class="form-control pull-right" id="datepicker" type="text">
+                                        <div class="clearfix"></div>
+                                        <span class="Errormessage DateError">Error Message to Show</span>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                              <div class="form-group">
+                                    <label>End Date</label>
+                                    <div class="input-group date">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input class="form-control pull-right" id="datepicker1" type="text">
+                                        <div class="clearfix"></div>
+                                        <span class="Errormessage DateError">Error Message to Show</span>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                            </div>
+                            </div>
+
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                              <div class="form-group">
+                                    <label>Result Date</label>
+                                    <div class="input-group date">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input class="form-control pull-right" id="datepicker1" type="text">
+                                        <div class="clearfix"></div>
+                                        <span class="Errormessage DateError">Error Message to Show</span>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                              <div class="form-group">
+                               <label>Total Price</label>
+                                <input class="form-control" placeholder="Total Question" type="">
+                               </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                              <div class="form-group">
+                               <label>Offer Price</label>
+                                <input class="form-control" placeholder="Total Question" type="">
+                               </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3">
+                              <div class="form-group">
+                               <label>Offer Available</label>
+                                <select class="form-control">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                        <option>option 5</option>
+                                    </select>
+                               </div>
+                            </div>
+
+
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <h3>Step 2</h3>
+                                  
+              <div class="row">    
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                   <label>Total Question</label>
+                    <input class="form-control" placeholder="Total Question" type="">
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                    <label>Exam Time</label>  
+                  <div class="input-group" style="top: auto; left: auto;">
+                    <input  value="180" class="form-control" placeholder="Time" type="text">
+                    <div class="input-group-addon">Minute</div>
+                </div>
+                     
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                    <label>Uploading Time</label>  
+                   <div class="input-group" style="top: auto; left: auto;">
+                    <input  value="10-15" class="form-control" placeholder="Time" type="text">
+                    <div class="input-group-addon">Minute</div>
+                </div>
+                   </div>
+                </div>  
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                   <label>Max Mark</label>
+                    <input class="form-control" placeholder="Max Mark" type="">
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                   <label>Passing Mark</label>
+                    <input class="form-control" placeholder="Passing Mark" type="">
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                   <label for="exampleInputEmail1">Result Date</label>
+                    <input class="form-control Datep" placeholder="Result Date" type="" id="datepicker" readonly >
+                   </div>
+                </div>  
+                <div class="col-sm-2 col-md-2">
+                  <label>&nbsp;</label>    
+                  <a  class="btn btn-success btn-sm mrt30" href="#"> &nbsp; Ok &nbsp; </a>
+                </div>   
+               </div>    
+               <table class="table table-bordered queTable">
+                 <thead>
+                    <tr>
+                     <th width="60px">Sr No</th>
+                     <th>Enter Subquestions</th>
+                    </tr>
+                  </thead>
+                 <tbody>
+                  <tr>
+                     <td width="60px">
+                        <b>Q. 1</b>
+                       <input  value="1" type="hidden">
+                      </td>
+                       <td>
+                         <div class="row ">
+                            <div class="col-sm-6 col-xs-6 col-md-3">
+                              <input class="form-control" placeholder="Question" type="text">
+                            </div>
+                              
+                            <div class="col-sm-6 col-xs-10 col-md-9 cDiv">
+                                <div class="pull-left imguploadDv"> 
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-picture-o pull-right"></i>
+                                    </span>
+                                </div>
+                                <span class="fileOuter">
+                                   <span class="uploadText">Upload</span>
+                                   <input type="file" class="uploadC">
+                                </span> 
+                             <a  class="btn btn-info btn-sm" href="#"> <i class="fa fa-plus"></i> </a>
+                             <a  class="btn btn-success btn-sm" href="#"> &nbsp; Ok &nbsp; </a>    
+                            </div>
+                             <div class="clearfix"></div>
+                             <p class="que"><b>Q1.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                 <span class="EditPencile"><i class="fa fa-pencil" aria-hidden="true"></i>
+</span></p> 
+                             <div class="col-sm-6 col-xs-6 col-md-3 subQue">
+                              <b>Q. a</b><input class="form-control subQueInput" placeholder="Question" type="text">
+                                 <div class="clearfix"></div>
+                             
+                            </div>
+                             <div class="clearfix"></div>
+                             <p class="que"><b>Q. a</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                 <span class="EditPencile"><i class="fa fa-pencil" aria-hidden="true"></i>
+</span></p>
+                             <div class="clearfix"></div>
+                           </div>
+                        </td>
+                      </tr>
+                     <tr>
+                       <td width="60px">
+                          <b>Q. 2</b>
+                          <input value="2" type="hidden">
+                        </td>
+                        <td>
+                          <div class="row ">
+                             <div class="col-sm-6 col-xs-6 col-md-3">
+                                <input class="form-control" placeholder="Question" type="text">
+                             </div>
+                            <div class="col-sm-6 col-xs-6 col-md-9 cDiv">
+                              <div class="pull-left imguploadDv"> 
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-picture-o pull-right"></i>
+                                    </span>
+                                </div>    
+                                <span class="fileOuter">
+                                            <span class="uploadText">Upload</span>
+                                            <input type="file" class="uploadC">
+                                          </span> 
+                             <a  class="btn btn-info btn-sm" href="#"> <i class="fa fa-plus"></i> </a>
+                             <a  class="btn btn-success btn-sm" href="#"> &nbsp; Ok &nbsp; </a>    
+                            </div>
+                                    <div class="clearfix"></div>
+                         </div>
+                        </td>
+                      </tr>
+                      <tr>
+                         <td width="60px">
+                           <b>Q. 3</b>
+                             <input value="3" type="hidden">
+                         </td>
+                         <td>
+                          <div class="row ">
+                             <div class="col-sm-6 col-xs-6 col-md-3">
+                                <input class="form-control" placeholder="Question" type="text">
+                              </div>
+                            <div class="col-sm-6 col-xs-6 col-md-9 cDiv">
+                                <div class="pull-left imguploadDv"> 
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-picture-o pull-right"></i>
+                                    </span>
+                                </div>
+                                <span class="fileOuter">
+                                            <span class="uploadText">Upload</span>
+                                            <input type="file" class="uploadC">
+                                          </span> 
+                             <a  class="btn btn-info btn-sm" href="#"> <i class="fa fa-plus"></i> </a>
+                             <a  class="btn btn-success btn-sm" href="#"> &nbsp; Ok &nbsp; </a>    
+                            </div>
+                                   <div class="clearfix"></div>
+                             </div>
+                           </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                              <b>Q. 4</b>
+                               <input value="4" type="hidden">
+                            </td>
+                            <td>
+                            <div class="row ">
+                               <div class="col-sm-6 col-xs-6 col-md-3">
+                                   <input class="form-control" placeholder="Question" type="text">
+                                </div>
+                                <div class="col-sm-6 col-xs-6 col-md-9 cDiv">
+                                  <div class="pull-left imguploadDv"> 
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-picture-o pull-right"></i>
+                                    </span>
+                                </div>    
+                                  <span class="fileOuter">
+                                    <span class="uploadText">Upload</span>
+                                      <input type="file" class="uploadC">
+                                      
+                                  </span>      
+                                 <a  class="btn btn-info btn-sm" href="#"> <i class="fa fa-plus"></i> </a>
+                                 <a  class="btn btn-success btn-sm" href="#"> &nbsp; Ok &nbsp; </a>    
+                                </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                               <td width="60px">
+                                  <b>Q. 5</b>
+                                  <input value="5" type="hidden">
+                                </td>
+                                <td>
+                                   <div class="row ">
+                                      <div class="col-sm-6 col-xs-6 col-md-3">
+                                           <input class="form-control" placeholder="Question" type="text">
+                                       </div>
+                                       <div class="col-sm-6 col-xs-6 col-md-9 cDiv">
+                                         <div class="pull-left imguploadDv"> 
+                                            <span class="pull-right-container">
+                                                <i class="fa fa-picture-o pull-right"></i>
+                                            </span>
+                                        </div>   
+                                          <span class="fileOuter">
+                                            <span class="uploadText">Upload</span>
+                                            <input type="file" class="uploadC">
+                                          </span>    
+                                         <a  class="btn btn-info btn-sm" href="#"> <i class="fa fa-plus"></i> </a>
+                                         <a  class="btn btn-success btn-sm" href="#"> &nbsp; Ok &nbsp; </a>    
+                                       </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                     </td>
+                                 </tr>
+                                  </tbody>
+                                </table>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <h3>Step 3</h3>
+                         
+                        <div class="row">    
+                <div class="col-md-6">
+                  <div class="form-group">
+                   <label>Description</label>
+                    <textarea id="editor1" name="editor1" rows="10" cols="80">
+                     
+                   </textarea>
+                   </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                   <label>Short Description</label>
+                    <textarea rows="2" cols="20"  class="form-control">d</textarea>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                   <label>Note</label>
+                    <textarea rows="2" cols="20"  class="form-control">d</textarea>
+                   </div>
+                </div>  
+                <div class="col-md-6">
+                  <div class="form-group">
+                   <label>Instruction Set</label>
+                    <textarea rows="2" cols="20"  class="form-control">d</textarea>
+                   </div>
+                </div>    
+               </div>
+                        <div class="clearfix"></div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <h3>Complete</h3>
+                        <p>You have successfully completed all steps.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+                 </div>  
+                 </div>
+   
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+{% endblock %}
+
+<!-- Page script -->
+
+{% block js_block %}
+
+    <script>
+  $(function () {
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+
+  });
+</script>
+<script>
+  $(function () {
+    //Date picker
+    $('#datepicker1').datepicker({
+      autoclose: true
+    });
+
+  });
+</script>    
+
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script>
+     $(document).ready(function () {
+    //Initialize tooltips
+    $('.nav-tabs > li a[title]').tooltip();
+    
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+        var $target = $(e.target);
+    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        prevTab($active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+    
+    
+    </script>
+    
+    <script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+    <script>
+      $(function () {
+        // Replace the <textarea id="editor1"> with a CKEditor
+        // instance, using default configuration.
+        CKEDITOR.replace('editor1');
+        //bootstrap WYSIHTML5 - text editor
+        $(".textarea").wysihtml5();
+      });
+    </script>
+{% endblock %}
