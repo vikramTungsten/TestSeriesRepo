@@ -87,7 +87,7 @@
             <section class="sidebar">
                 <!-- Sidebar user panel -->
                 <!-- sidebar menu: : style can be found in sidebar.less -->
-                <ul class="sidebar-menu">
+                <ul id="menuList" class="sidebar-menu">
 
                     <li class="active">
                         <a href="Dashboard.html">
@@ -105,35 +105,20 @@
                         </a>
                     </li>
                     <li>
-                        <a href="Table.html">
+                        <a href="/exam/">
                             <i class="fa fa-table"></i> <span>Exam</span>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="Table.html">
-                            <i class="fa fa-table"></i> <span>Table</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="DataTable.html">
-                            <i class="fa fa-table"></i> <span>Data Table</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-bars"></i> <span>Menu3</span>
-                        </a>
-                    </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-share"></i> <span>Multilevel</span>
+                            <i class="fa fa-share"></i> <span>Master Table</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i>Category</a></li>
                             <li>
                                 <a href="#">
                                     <i class="fa fa-circle-o"></i> Level One
@@ -213,6 +198,12 @@
     $('#datepicker').datepicker({
       autoclose: true
     });
+
+    /*$('#menuList li a').click(function() {
+        alert('vikram')
+        $('ui li.active').removeClass('active');
+        $(this).closest('li').addClass('active');
+});*/
 
   });
 </script>

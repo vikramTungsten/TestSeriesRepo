@@ -281,8 +281,42 @@
                                </div>
                             </div>
                         </div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-primary next-step">Add Question</button></li>
+                        </ul>
+                        <section class="content wow fadeInDownBig" data-wow-delay="0.8s" >
+                          <div class="row">
+                              <div class="col-md-12">
+                                <div class="table-responsive mrt15">
+                                    <table class="table table-bordered table-striped table-hover tableRes">
+                                        <thead>
+                                            <tr>
+                                                    <th>#</th>
+                                                    <th>Question</th>
+                                                    <th>Images</th>
+                                                    <th>Edit</th>
+                                                    <th>Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                    <td>1</td>
+                                                    <td>Table cell</td>
+                                                    <td>Table cell</td>
+                                                    <td>Table cell</td>
+                                                    <td>Table cell</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                              </div>
+                            </div>
+                            </div>
+                        </section>
 
-
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                        </ul>
 
                     </div>
 
@@ -371,6 +405,9 @@
     $('#datepicker1').datepicker({
       autoclose: true
     });
+
+     $('ui li.active').removeClass('active');
+     $(this).closest('li').addClass('active');
 
   });
 </script>    
