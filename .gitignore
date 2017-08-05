@@ -1,0 +1,8 @@
+*.pyc
+*.log
+*.xml
+*.py-tpl
+*.swp
+.idea
+migrations/
+
